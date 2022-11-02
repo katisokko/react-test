@@ -1,7 +1,7 @@
 const Pokemon = (props) => {
     console.log(props)
     return (
-        <div>
+        <div className="pokemonideinfo">
             <img src={props.pokemon.sprites.front_default} />
             <div>ID: {props.pokemon.id}</div>
             <div>Nimi: {props.pokemon.name}</div>

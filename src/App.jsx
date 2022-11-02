@@ -30,13 +30,13 @@ function App() {
   return (
     <div className="App">
       <Pais />
-      <a onClick={() => { setValitudPokemon(undefined) }}>Kustuta valitud pokemon</a>
+      <div className="kustuta" onClick={() => { setValitudPokemon(undefined) }}>Kustuta valitud pokemon</div>
       <br />
       <br />
       {valitudPokemon ?
         <PokemoniInfo pokemon={valitudPokemon} /> :
         <PokemonideList pokemonid={pokemonid} pariPokemoniInfo={pariPokemoniInfo} />}
-      <div>
+      <div className="navi">
         <span onClick={() => { pariPokemonid(eelmineUrl) }}>{'<'} Eelmine leht</span>
         <span> | </span>
         <span onClick={() => { pariPokemonid(jargmineUrl) }}>Järgmine leht {'>'}</span>

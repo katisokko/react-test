@@ -7,7 +7,7 @@ const PokemonideListiElement = (props) => {
 
 const PokemonideList = (props) => {
     return (
-        <div>
+        <div className="pokemonidelist">
             {props.pokemonid.map(
                 pokemon =>
                     <PokemonideListiElement
