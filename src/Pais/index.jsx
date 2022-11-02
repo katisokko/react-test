@@ -1,9 +1,10 @@
 import './style.css'
+import logo from '../pokemonlogo.png'
 
-const Pais = () => {
-    return (
-        <h1>Ilmarakendus</h1>
-    )
+console.log(logo); // /pokemonlogo.png
+
+function Pais() {
+    return <img src={logo} alt="Logo" class="logo" />;
 }
-
+  
 export default Pais;
